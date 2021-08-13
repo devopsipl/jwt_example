@@ -1,0 +1,19 @@
+logging:
+  level:
+    org:
+      springframework:
+        data:mongodb:
+          core:
+            MongoTemplate: DEBUG
+devopsijwt:
+  app:
+    #   15 minutes
+    jwtExpirationMs: 900000
+    #   1 week
+    jwtRefreshExpirationMs: 604800000
+    jwtSecret: "zdtlD3JK56m6wTTgsNFhqzjqP"
+  api-docs:
+    enabled: true
+    path: "/rest-api-docs"
+  swagger-ui:
+    path: "/swagger-ui"
